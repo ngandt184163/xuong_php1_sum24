@@ -10,5 +10,6 @@ function showData($data){
     }else {
         var_dump($data);
     }
+    die();
 }
 ?>

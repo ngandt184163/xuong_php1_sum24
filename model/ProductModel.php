@@ -1,6 +1,6 @@
 <?php
 
-include "./includes/connect.php";
+require_once "./includes/connect.php";
 class ProductModel {
     public $conn;
 

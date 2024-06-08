@@ -1,3 +1,6 @@
+<?php
+include "./includes/header.php";
+?>
 <h2>Trang chi tiet san pham</h2>
 
 <div class="product">
@@ -6,3 +9,7 @@
     <i><?php echo $product['quanty']; ?></i>
 </div>
 <hr>
+
+<?php
+include "./includes/footer.php";
+?>

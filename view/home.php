@@ -1,3 +1,8 @@
+<?php
+include "./includes/header.php";
+?>
+
+
 <h1>Trang chu chua ds san pham</h1>
 
 <style>
@@ -22,3 +27,8 @@
     ?>
     
 </div>
+
+
+<?php
+include "./includes/footer.php";
+?>
