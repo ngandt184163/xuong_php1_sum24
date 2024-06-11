@@ -42,6 +42,25 @@ switch($action) {
     case "logout":
         $userController->logout();
         break;
+    case "them" :
+        $productController->loadViewThem();
+        break;
+    case "store":
+        $productController->store();
+        break;
+    case "xoa":
+        $id=$_GET['id'];
+        $productController->delete($id);
+        break;
+
+    case "sua" :
+        $id=$_GET['id'];
+        $productController->loadViewSua($id);
+        break;
+    case "update":
+        $id=$_GET['id'];
+        $productController->update($id);
+        break;   
 }
 
 ?>
