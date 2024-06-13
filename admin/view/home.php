@@ -1,9 +1,10 @@
 <?php
-include "./includes/header.php";
+include "../includes/header.php";
+checkAdmin();
 ?>
 
 
-<h1>Trang chu chua ds san pham</h1>
+<h1>Trang ADMIN</h1>
 
 <button><a href="?action=them">Them san pham</a></button>
 
@@ -65,7 +66,7 @@ include "./includes/header.php";
 
 
 <?php
-include "./includes/footer.php";
+include "../includes/footer.php";
 ?>
 
 

@@ -35,4 +35,34 @@ function uploadFile($file, $folderUpload = './public/image/') {
     return null; // Upload fail trả về null
 }
 
+function checkAdmin() {
+    // xu li phan quyen
+    if(isset($_SESSION['email'])){
+        $email = $_SESSION['email'];
+        $role = $_SESSION['role'];
+        // showData($role);
+        // kiem tra xem co la admin khong
+        if($role == 1) {
+            $action = isset($_GET['action']) ? $_GET['action'] : "home";
+            // $action='home';
+        }else {
+            // echo "<script>alert('Ban khong co quyen truy cap');</script>";
+            // header('location:../index.php');
+            ?>
+            <script>
+                alert('Ban khong co quyen truy cap');
+                // setTimeout(() => {
+                //     window.location.href='../index.php';
+                // }, 3000);
+            </script>
+            <?php
+            echo "<script>window.location.href='../index.php';</script>";
+            // die();
+        }
+    }else {
+        $action = 'login';
+        header('location:?action=login');
+    }
+}
+
 ?>
